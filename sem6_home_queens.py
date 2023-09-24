@@ -13,7 +13,7 @@ dic_queens = {}
 
 while count != NUMBER_OF_SET:
     queens = chs.queens_setup(QUEENS_NUMBER)
-    while res := not chs.check(queens):
+    while not chs.check(queens):
         # print(res)
         queens = chs.queens_setup(QUEENS_NUMBER)
     count += 1
