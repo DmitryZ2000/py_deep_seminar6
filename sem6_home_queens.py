@@ -4,8 +4,12 @@
 
 
 from games import sem6_home2_chess as chs
+import time
 
-QUEENS_NUMBER = 8
+
+start_time = time.time()
+
+QUEENS_NUMBER = 7
 NUMBER_OF_SET = 4
 
 count = 0
@@ -18,6 +22,8 @@ while count != NUMBER_OF_SET:
         queens = chs.queens_setup(QUEENS_NUMBER)
     count += 1
     dic_queens[count] = queens
+    # print(dic_queens)
 
 print(dic_queens)
-
+end_time = time.time()
+print(f'Время выполнения кода {end_time - start_time}')
