@@ -28,7 +28,7 @@ def queens_setup(queens_number: int) -> tuple:
     """ Генерация расстановки ферзей """
     queens_set = set()
     while len(queens_set) < queens_number:
-        queens_set.add((rnd.randint(0,7), rnd.randint(0,7)))
+        queens_set.add((rnd.randint(1, 8), rnd.randint(1, 8)))
     return tuple(queens_set)
       
 # chess_desk = [[1,0,0,0,0,0,0,0], \
