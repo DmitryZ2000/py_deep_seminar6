@@ -27,8 +27,8 @@ def check(my_qeens: tuple) -> True | False:
 def queens_setup(queens_number: int) -> tuple:
     """ Генерация расстановки ферзей """
     queens_set = set()
-    while len(queens_set) < queens_number:
-        queens_set.add((rnd.randint(1, 8), rnd.randint(1, 8)))
+    for i in range(1, queens_number + 1):
+        queens_set.add((i, rnd.randint(1, 8)))
     return tuple(queens_set)
       
 # chess_desk = [[1,0,0,0,0,0,0,0], \
@@ -48,7 +48,7 @@ def queens_setup(queens_number: int) -> tuple:
 if __name__ == '__main__':
     # queens = ((1, 1), (1, 2), (3, 3), (4, 4), (2, 8), (7, 2), (6, 6), (3, 7))
     # queens = ((2, 4), (5, 5))
-    QUEENS_NUMBER = 5
+    QUEENS_NUMBER = 4
     queens = queens_setup(QUEENS_NUMBER)
     print(queens)
     print(check(queens))

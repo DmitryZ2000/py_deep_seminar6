@@ -9,7 +9,7 @@ import time
 
 start_time = time.time()
 
-QUEENS_NUMBER = 6
+QUEENS_NUMBER = 8
 NUMBER_OF_SET = 4
 
 count = 0
