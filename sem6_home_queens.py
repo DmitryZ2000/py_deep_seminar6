@@ -10,7 +10,7 @@ import time
 start_time = time.time()
 
 QUEENS_NUMBER = 8
-NUMBER_OF_SET = 4
+NUMBER_OF_SET = 90
 
 count = 0
 dic_queens = {}
